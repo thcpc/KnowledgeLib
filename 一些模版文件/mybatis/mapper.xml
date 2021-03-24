@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kuang.dao.UserDao">
+    <select id="getListUser" resultType="com.kuang.pojo.User">
+        select * from mybatis.user
+    </select>
+
+    <select id="getUserById" resultType="com.kuang.pojo.User" parameterType="int">
+        SELECT * FROM mybatis.user WHERE id = #{id}
+    </select>
+
+    <select id="getUserById2" resultType="com.kuang.pojo.User" parameterType="map">
+        SELECT * FROM mybatis.user WHERE id = #{id}
+    </select>
+
+
+
+    <insert id="addUser" parameterType="com.kuang.pojo.User">
+        insert into mybatis.user(id,name,pwd) values (#{id},#{name},#{pwd})
+    </insert>
+
+    <update id="updateUser" parameterType="com.kuang.pojo.User">
+        update mybatis.user set pwd = #{pwd} WHERE id = #{id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from mybatis.user WHERE id = #{id}
+    </delete>
+
+</mapper>
