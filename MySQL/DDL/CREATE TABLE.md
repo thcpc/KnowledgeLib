@@ -1,0 +1,25 @@
+# 建表
+## 学生表
+```SQL
+CREATE TABLE IF NOT EXISTS `student`(
+	`id`  INT(4) NOT NULL AUTO_INCREMENT COMMENT '序号',
+	`name` VARCHAR(30) NOT NULL DEFAULT '匿名' COMMENT '姓名',
+	`pwd` VARCHAR(30) NOT NULL DEFAULT '123456' COMMENT '密码',
+	`sex` VARCHAR(2) NOT NULL DEFAULT '男' COMMENT '性别',
+	'grade_id' INT(4) NOT NULL,
+	`birthday` DATETIME NOT NULL DEFAULT '2020-10-01' COMMENT '生日',
+	`address` VARCHAR(100) NOT NULL DEFAULT '中国' COMMENT '地址',
+	`email` VARCHAR(50) NOT NULL DEFAULT 'xxx@163.com' COMMENT '邮箱',
+	PRIMARY KEY(`id`), #指定主键
+	FOREIGN KEY(`grade_id`) REFERENCES grade(`id`) #指定外建
+)ENGINE = INNODB DEFAULT CHARSET=utf8mb4;
+```
+
+## 年级表
+```sql
+CREATE TABLE IF NOT EXISTS `grade`(  
+     `id` INT(4) NOT NULL AUTO_INCREMENT COMMENT 'id',  
+ 	 `name` VARCHAR(50) NOT NULL,  
+ 	  PRIMARY KEY(`id`)  
+)ENGINE = INNODB DEFAULT CHARSET=utf8mb4;
+```
