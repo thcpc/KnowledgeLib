@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Java知识集/Mybatis/基本配置.md",
+            "file": "Java知识集/Mybatis/配置MyBatis/普通Java程序.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java知识集/Mybatis/基本配置.md",
+                "file": "Java知识集/Mybatis/配置MyBatis/普通Java程序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "46b029166c5498f3",
   "lastOpenFiles": [
+    "Java知识集/Mybatis/配置MyBatis/普通Java程序.md",
+    "Java知识集/Mybatis/配置MyBatis/SpringBoot.md",
+    "Java知识集/Mybatis/配置MyBatis/未命名.md",
     "Java知识集/Mybatis/基本配置.md",
-    "Java知识集/Mybatis/参考资料.md",
-    "Java知识集/Mybatis/未命名.md",
-    "Java知识集/Mybatis/配置文件.md",
-    "Java知识集/Mybatis/Mapper.xml.md",
-    "Java知识集/Mybatis/基本操作.md",
     "Java知识集/Mybatis/源码学习/纵览.md",
     "Java知识集/Mybatis/源码学习/执行SQL.md",
     "Java知识集/Mybatis/源码学习/数据库操作.md",
-    "Java知识集/Mybatis/源码学习/获取数据源.md"
+    "Java知识集/Mybatis/源码学习/获取数据源.md",
+    "Java知识集/Mybatis/Mapper.xml.md",
+    "Java知识集/Mybatis/配置文件.md"
   ]
 }
