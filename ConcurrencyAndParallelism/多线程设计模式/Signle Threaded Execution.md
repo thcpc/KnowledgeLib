@@ -12,7 +12,7 @@
 # 相关的模式
 Guarded Suspension Pattern
 Read-Write Lock Pattern
-Immutable Pattern
+[[Immutable | Immutable Pattern]]
 Thread-Specific Storage Pattern
 
 # 实现
