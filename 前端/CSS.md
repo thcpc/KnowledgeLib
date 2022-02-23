@@ -67,3 +67,93 @@ ul[class="tt"] li {
 }
 ```
 
+# background
+## [background-attachment](https://www.w3schools.com/cssref/pr_background-attachment.asp)
+
+Sets whether a background image is fixed or scrolls with the rest of the page
+
+## [background-clip](https://www.w3schools.com/cssref/css3_pr_background-clip.asp)
+
+Specifies the painting area of the background
+
+## [background-color](https://www.w3schools.com/cssref/pr_background-color.asp)
+
+Sets the background color of an element
+
+## [background-image](https://www.w3schools.com/cssref/pr_background-image.asp)
+
+Sets the background image for an element
+
+## [background-origin](https://www.w3schools.com/cssref/css3_pr_background-origin.asp)
+
+Specifies where the background image(s) is/are positioned
+
+## [background-position](https://www.w3schools.com/cssref/pr_background-position.asp)
+
+Sets the starting position of a background image
+
+## [background-repeat](https://www.w3schools.com/cssref/pr_background-repeat.asp)
+
+Sets how a background image will be repeated
+
+## [background-size](https://www.w3schools.com/cssref/css3_pr_background-size.asp)
+
+Specifies the size of the background image(s)
+1. 把图片完全覆盖，即使图片会失真
+```css
+body{
+	backgroud-image: url("1.jpg");
+	backgroud-size: cover
+}
+```
+2. 把图片尽量保持不失真的情况下，覆盖背景层
+ ```css
+body{
+	backgroud-image: url("1.jpg");
+	backgroud-size: contain
+}
+```
+## Gradinets
+渐变色
+```css
+body{
+	background: linear-gradient(to bottom, rgb(200,105,30),rgb(200,105,31,0.4))
+}
+```
+
+# Units
+绝对单位
+ - px
+ - pt
+ - pc
+ - cm
+ - mm
+ 相对单位
+ - em
+ - vw
+ - %
+# FlexBox
+针对容器的控制
+```css
+.container{
+	dispaly: flex; # 表明该容器使用FlexBox布局
+	flex-direction: colum; # 控制容器中元素的排列方式，colum是垂直排列， row 是横向排列
+	flex-wrap: wrap; # 控制如果屏幕满了后是否换行，wrap 换行，nowrap不换行
+    justify-content: center; # 控制元素水平的位置，center 居中，flex-end 居后 ，flex-start 居前，space-between 元素间等分间隔, space-around 前，后，元素间等分间隔
+	align-items:center; # 控制元素垂直方向的位置 center 居中, flex-end 底部, flex-start 顶格, baseline 如果元素高度不一致的，按高度剧中对齐
+	
+}
+```
+针对组件的控制
+
+```css
+.container-item{
+	order: 1; # 调整顺序
+    flex-grow:2; # 当拉伸屏幕时，假如其余组件为1，则在拉伸程度时，该组件是其余组件的2倍
+	flex-shrink:2; # 当屏幕压缩时，假如其余组件为1，则在压缩程度，该组件是其余组件的2倍
+	flex-basis: 100px; # 定义组件基准长度
+
+	flex: 1 2 100px; # flex-grow flex-shrink flex-basis 的简写形式
+	align-self: center # 内容同align只是这个控制单个元素align控制容器中所有的
+}
+```
