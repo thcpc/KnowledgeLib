@@ -1,0 +1,40 @@
+依赖的package
+```xml
+<dependencies>
+  <dependency>  
+   <groupId>org.springframework.boot</groupId>  
+   <artifactId>spring-boot-starter-test</artifactId>  
+   <scope>test</scope>  
+   <exclusions>        
+     <exclusion>            
+        <groupId>junit</groupId>  
+        <artifactId>junit</artifactId>  
+	 </exclusion>    
+	</exclusions>
+  </dependency>
+  <dependency>  
+    <groupId>org.assertj</groupId>  
+    <artifactId>assertj-core</artifactId>  
+    <version>3.17.2</version>  
+    <scope>test</scope>  
+  </dependency>
+  <dependency>  
+    <groupId>org.testcontainers</groupId>  
+    <artifactId>mysql</artifactId>  
+    <version>1.16.2</version>  
+    <scope>test</scope>  
+  </dependency>  
+  <dependency>  
+    <groupId>org.testcontainers</groupId>  
+    <artifactId>junit-jupiter</artifactId>  
+    <version>1.16.2</version>  
+    <scope>test</scope>  
+  </dependency>  
+  <dependency>  
+    <groupId>com.h2database</groupId>  
+    <artifactId>h2</artifactId>  
+    <version>2.1.210</version>  
+    <scope>test</scope>  
+  </dependency>
+</dependencies>
+```
