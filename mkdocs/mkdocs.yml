@@ -1,0 +1,21 @@
+site_name: 桔子爸爸
+nav:
+  - Home: 
+    - Home: index.md
+    - Linux: linux/index.md
+    - Python: python/index.md
+    - Java: java/index.md
+  - Linux: linux/index.md
+  - Python: python/index.md
+  - Java: java/index.md
+theme: 
+  name: 'material'
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+plugins:
+  - mermaid2
+extra_javascript:
+    - js/mermaid.min.js
