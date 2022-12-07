@@ -17,5 +17,6 @@ theme:
     - navigation.indexes
 plugins:
   - mermaid2
+  - search
 extra_javascript:
     - js/mermaid.min.js
