@@ -7,7 +7,11 @@ nav:
     - Java: java/index.md
   - Linux: linux/index.md
   - Python: python/index.md
-  - Java: java/index.md
+  - Java: 
+    - Java: java/index.md
+    - Spring: 
+      - Spring: java/spring/index.md
+      - FAQ: java/spring/spring-faq.md
 theme: 
   name: 'material'
   features:
