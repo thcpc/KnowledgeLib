@@ -5,6 +5,7 @@ nav:
     - Linux: linux/index.md
     - Python: python/index.md
     - Java: java/index.md
+    - 前端知识: frontEnd/index.md
   - Linux: linux/index.md
   - Python: python/index.md
   - Java: 
@@ -12,6 +13,12 @@ nav:
     - Spring: 
       - Spring: java/spring/index.md
       - FAQ: java/spring/spring-faq.md
+  - 前端知识:
+    - FrondEnd: frontEnd/index.md
+    - Augular:
+      - Angular: frontEnd/angular/index.md
+      - Http: frontEnd/angular/http.md
+
 theme: 
   name: 'material'
   features:
