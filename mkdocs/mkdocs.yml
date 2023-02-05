@@ -17,7 +17,7 @@ nav:
     - FrondEnd: frontEnd/index.md
     - Augular:
       - Angular: frontEnd/angular/index.md
-      - Http: frontEnd/angular/http.md
+      - Http 范式: frontEnd/angular/http.md
 
 theme: 
   name: 'material'
