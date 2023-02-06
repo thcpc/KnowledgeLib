@@ -38,19 +38,50 @@ export interface TraineeDto extends ResponseBase{
     payLoad:TraineeDef;     
 }
 ```
-### 响应处理
-
+### 发送请求并处理响应
+trainee.service.ts
 ```ts
-this.traineeService.sign(traineId)
-    .pipe(
-      catchError(this.traineeService.handleHttpError),
-      this.traineeService.handleRespError)
+export class TraineeService extends BaseService {
+
+  private traineeSignUrl = 'http://localhost:8080/yan/trainee/sign';
+
+  constructor(private http: HttpClient) {
+    super();
+  }
+
+  sign(user_id:number):Observable<TraineeDto>{
+    const options = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    }
+    return this.http.post<TraineeDto>(this.traineeSignUrl,new TraineeSignDto(user_id),options);
+  }
+
+  
+}
+```
+trainees.component.ts
+```ts
+export class TraineesComponent implements OnInit {
+  trainees:TraineeDef[] = [];
+  constructor(private traineeService: TraineeService,private modalService: NgbModal) { }
+
+  ngOnInit(): void {
+    this.getTrainess();    
+  }
+  # 调用 TraineeService
+  signIn(traineId:number):void{
+    this.traineeService.sign(traineId)
+    .pipe( 
+      catchError(this.traineeService.handleHttpError), # 处理网络异常或服务器异常 
+      this.traineeService.handleRespError) # 业务异常
     .subscribe({ 
-        next: (trainDto) => this.updateTraineesSign(trainDto),
-        error: (e) => this.openErr(e)
+        next: (trainDto) => this.updateTraineesSign(trainDto), # 正常的逻辑
+        error: (e) => this.openErr(e) # 出现错误的话，弹框提示
       }
     );
+  }
 ```
+
 ### 异常处理
 base.service.ts
 #### 
