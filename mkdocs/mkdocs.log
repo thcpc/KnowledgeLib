@@ -1,0 +1,12 @@
+[33mWARNING  -  [0mConfig value 'dev_addr': The use of the IP address '0.0.0.0' suggests a production environment or the use of a proxy to connect to the MkDocs server. However, the MkDocs' server is intended for local development purposes only. Please use a third party production-ready server instead.
+INFO     -  Building documentation...
+INFO     -  MERMAID2  - Initialization arguments: {}
+INFO     -  MERMAID2  - Explicit mermaid javascript library:
+   js/mermaid.min.js
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 0.69 seconds
+INFO     -  [00:32:26] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO     -  [00:32:26] Serving on http://0.0.0.0:9999/
+INFO     -  [00:32:42] Browser connected: http://localhost:9999/
+INFO     -  [00:33:42] Browser connected: http://localhost:9999/frontEnd/angular/
+INFO     -  [00:34:42] Browser connected: http://localhost:9999/frontEnd/angular/http/

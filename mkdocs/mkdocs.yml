@@ -13,6 +13,7 @@ nav:
     - Spring: 
       - Spring: java/spring/index.md
       - FAQ: java/spring/spring-faq.md
+      - Spring Response 封装: java/spring/spring-respDTO.md
   - 前端知识:
     - FrondEnd: frontEnd/index.md
     - Augular:

@@ -109,7 +109,7 @@ export class BaseService{
       ## 处理业务数据返回异常
       handleRespError(resp:Observable<ResponseBase>):Observable<ResponseBase>{
         return resp.pipe(
-          switchMap((res) => {
+          tap((res) => {
             if (res.code != 200) { 
               return throwError(() => new Error(res.msg)); 
             }
